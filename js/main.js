@@ -47,7 +47,30 @@ jQuery(function($) { "use strict";
   });
 
   $container = $('.isotope-content');
+  /* ------------------------------------------------------------------------ */
+  /* TRANSPARENT NAV */
+  /* ------------------------------------------------------------------------ */
+  function athFixedNav() {
+    var headerNav = jQuery('.header-wrap-2');
+  	if (jQuery(window).scrollTop() > jQuery(window).height()){
+  		headerNav.addClass('scroll bgc-2');
+  	} else {
+  		headerNav.removeClass('scroll bgc-2');
+  	}
+  	jQuery(window).on("scroll", function(){
+  		var winHeight = jQuery(window).height();
+  		var windowWidth = jQuery(window).width();
+  		var windowScroll = jQuery(window).scrollTop();
+  		var home_height =  jQuery('.header-wrap-1').outerHeight();
 
+  			if (jQuery(window).scrollTop() > home_height){
+  				headerNav.addClass('scroll bgc-2');
+  			} else {
+  				headerNav.removeClass('scroll bgc-2');
+  			}
+  	  });
+  }
+  athFixedNav();
   /*============================*/
   /* 03 - SWIPER SLIDER */
   /*============================*/
