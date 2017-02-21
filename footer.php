@@ -39,7 +39,9 @@ $emailaddress		= get_theme_mod( 'mail' );
 				<div class="mail col-md-4"><span class="fa fa-envelope-o"></span><span><a href="mailto:<?php echo $emailaddress ?>"><?php echo $emailaddress ?></a></span></div>
 			</div>
 		</div>
-
+    <div class="footer-widgets">
+      
+    </div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
