@@ -40,7 +40,7 @@ $emailaddress		= get_theme_mod( 'mail' );
 			</div>
 		</div>
     <div class="footer-widgets">
-      
+      <?php wp_nav_menu( array( 'theme_location' => 'menu-footer', 'menu_id' => 'footer-menu', 'menu_class' => 'clearfix' ) ); ?>
     </div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
