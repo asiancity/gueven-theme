@@ -1,0 +1,157 @@
+.bg {
+    height: 100%;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    backface-visibility: hidden;
+}
+.bg-wrap {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+}
+.top-baner {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  height: 50vmin;
+}
+
+.top-baner.nvg-margin {
+  margin-top: 0;
+  padding-bottom: 0;
+}
+
+.single-portfolio .top-baner {
+  padding-bottom: 0;
+}
+.top-baner.bottom-margin .block-bg .bg-wrap {
+  top: 0px;
+}
+
+.top-baner.smal-size {
+  height: 400px;
+  min-height: 100%;
+}
+
+.single .top-baner.smal-size {
+  margin-top: 40px;
+}
+
+.top-baner.smal-size .title-style-1 {
+  margin-top: 35px;
+}
+.block-bg .bg-wrap {
+  top: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  background: #f4f7fc;
+}
+
+.block-bg .video-bg-wrap {
+  background:transparent;
+}
+
+.block-bg.full-wh .bg-wrap {
+  left: 0px;
+  right: 0px;
+}
+
+.block-bg {
+  padding: 0px 100px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+.slider-number {
+  position: absolute;
+  top: 50%;
+  font-size: 13px;
+  color: #272b2b;
+  right: -60px;
+  z-index: 5;
+  width: 50px;
+  text-align: center;
+}
+.slider-number:before {
+  top: -62px;
+}
+.slider-number:after {
+    bottom: -62px;
+}
+.slider-number:before, .slider-number:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 1px;
+  height: 50px;
+  background: #a9aaaa;
+}
+@media (max-width: 1600px) {
+  .content,
+  .block-bg,
+  .main-footer {
+    padding: 0;
+  }
+  .top-baner{
+    padding-bottom: 0;
+  }
+  .single-portfolio .top-baner {
+    padding-bottom: 0;
+  }
+
+}
+@media (max-width: 1200px) {
+  .content,
+  .block-bg {
+    padding: 0px 15px;
+  }
+  .block-bg .bg-wrap {
+    left: 15px;
+    top: 0px;
+    right: 15px;
+    bottom: 15px;
+  }
+  .top-baner {
+    height: 500px;
+  }
+}
+@media (max-width: 992px) {
+  .top-baner {
+    padding-bottom: 30px;
+  }
+  .top-baner.bottom-margin.section-scroll {
+    padding-bottom: 60px;
+  }
+  .section,
+  .testi-item {
+    padding: 60px 0px;
+  }
+  .top-baner {
+    min-height: 480px;
+  }
+  .swiper-anime .block-bg .bg {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transition: all 0.8s ease-out;
+    -webkit-transition: all 0.8s ease-out;
+  }
+  .swiper-anime .swiper-slide.active .block-bg .bg {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+@media (max-width: 480px) {
+  top-baner.smal-size .title-style-1 {
+    margin-left: 15px;
+  }
+  .top-baner {
+    height: 480px;
+  }
+}

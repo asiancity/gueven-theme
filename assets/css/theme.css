@@ -1,0 +1,98 @@
+/*--------------------------------------------------------------
+# Font Color
+--------------------------------------------------------------*/
+.site-header h1{
+  margin:0;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  text-transform: uppercase;
+}
+.site-header h1 a{
+  text-decoration: none;
+}
+.site-header .header-wrap-1{
+  text-align: center;
+  min-height: 63px;
+  border-top: 1px solid;
+}
+.site-header .search-form{
+  margin-top: 17px;
+}
+.site-header .search-submit{
+  display: none;
+}
+.site-header label{
+  position: relative;
+}
+
+.site-header label:before{
+  font-family: FontAwesome;
+  content: '\f002';
+  display: inline-block;
+  display: block;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  padding: 0 5px;
+}
+.site-header .search-field{
+  padding-left: 26px;
+  background: transparent;
+  border: 1px solid;
+  font-weight: 300;
+}
+.site-header .header-wrap-2{
+  border-bottom: 1px solid;
+}
+/*--------------------------------------------------------------
+# main-navigation
+--------------------------------------------------------------*/
+@media (min-width:992px){
+  .main-navigation ul{
+    display: inline-block;
+    margin-top: 5px;
+  }
+  .main-navigation > div{
+    text-align: center;
+  }
+  .main-navigation ul > li > a{
+    padding: 12px 15px;
+    text-transform: uppercase;
+  }
+}
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.site-footer{
+  border-top: 5px solid;
+  padding: 40px 0;
+}
+.site-footer a{
+  text-decoration: none;
+}
+.site-footer .information span,
+.site-footer .information .location > a{
+  display: block;
+}
+.site-footer .information .row > div{
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+}
+.site-footer .information span.fa{
+  font-size: 50px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+.site-content{
+  min-height: 400px;
+}
+.section{
+  padding-bottom: 60px;
+}

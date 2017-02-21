@@ -1,0 +1,14 @@
+.vc_editor .swiper-container,
+.vc_editor .swiper-wrapper,
+.vc_editor .swiper-slide{
+  width: 1110px !important
+}
+
+.vc_editor .vc_element{}
+/*
+.vc_editor .vc_col-sm-6{
+  width:100%;
+}
+.vc_editor .wpb_column{
+  float: left;
+}*/

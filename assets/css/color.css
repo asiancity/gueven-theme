@@ -1,0 +1,51 @@
+
+/*--------------------------------------------------------------
+# Font Color
+--------------------------------------------------------------*/
+a {
+  color: #98ab3f;
+}
+a:visited,
+a:hover {
+  color: #98ab3f;
+}
+.main-navigation .current_page_item > a,
+.main-navigation .current-menu-item > a,
+.main-navigation .current_page_ancestor > a,
+.main-navigation .current-menu-ancestor > a{
+  color:#404040;
+}
+.fc-1,
+.site-header label:before,
+.site-footer .information span.fa,
+.site-header .search-field,
+.site-footer .information a:hover{
+  color: #98ab3f;
+}
+::-webkit-input-placeholder { color: #98ab3f;}
+::-moz-placeholder { color: #98ab3f;}
+:-ms-input-placeholder { color: #98ab3f;}
+:-moz-placeholder { color: #98ab3f;}
+
+.site-footer a:hover,
+.site-footer a:visited,
+.site-footer .information,
+.site-footer .information a,
+.site-header .search-field:focus{
+  color:#FFF;
+}
+/*--------------------------------------------------------------
+# Background
+--------------------------------------------------------------*/
+.bgc-1{
+  background-color:#23282a;
+}
+
+/*--------------------------------------------------------------
+# Border Color
+--------------------------------------------------------------*/
+.bdc-1,
+.site-header .header-wrap-1,
+.site-header .search-field{
+  border-color:#98ab3f !important
+}
