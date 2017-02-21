@@ -72,6 +72,7 @@
 .site-footer a{
   text-decoration: none;
 }
+
 .site-footer .information span,
 .site-footer .information .location > a{
   display: block;
@@ -86,8 +87,22 @@
   display: inline-block;
   margin-bottom: 20px;
 }
-.site-footer .footer-widgets{
-  border-top: 1px solid #CCC;
+.site-footer .footer-menu{
+  border-top: 1px solid transparent;
+  padding: 30px 0 0 0;
+  margin-top: 40px;
+  text-align: center;
+}
+.footer-menu .footer-menu-container{
+  display: inline-block;
+}
+.footer-menu ul{
+  list-style: none;
+  float: left;
+}
+.footer-menu li{
+  float: left;
+  margin: 0 20px;
 }
 /*--------------------------------------------------------------
 # Content

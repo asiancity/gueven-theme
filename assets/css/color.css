@@ -6,7 +6,9 @@ a {
   color: #98ab3f;
 }
 a:visited,
-a:hover {
+a:hover,
+a:focus,
+a:active {
   color: #98ab3f;
 }
 .main-navigation .current_page_item > a,
@@ -19,7 +21,9 @@ a:hover {
 .site-header label:before,
 .site-footer .information span.fa,
 .site-header .search-field,
-.site-footer .information a:hover{
+.site-footer .information a:hover,
+.site-footer .footer-menu a:hover,
+.site-footer .footer-menu .current-menu-item > a{
   color: #98ab3f;
 }
 ::-webkit-input-placeholder { color: #98ab3f;}
@@ -31,6 +35,7 @@ a:hover {
 .site-footer a:visited,
 .site-footer .information,
 .site-footer .information a,
+.site-footer .footer-menu a,
 .site-header .search-field:focus{
   color:#FFF;
 }
@@ -48,4 +53,7 @@ a:hover {
 .site-header .header-wrap-1,
 .site-header .search-field{
   border-color:#98ab3f !important
+}
+.site-footer .footer-menu{
+  border-color: rgba(255,255,255, 0.3);
 }
