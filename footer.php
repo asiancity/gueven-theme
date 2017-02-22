@@ -27,7 +27,7 @@ $emailaddress		= get_theme_mod( 'mail' );
   			<div class="row">
   				<div class="location col-md-4">
   					<span class="fa fa-map-marker"></span>
-  					<a href="#">
+  					<a href="<?php echo get_permalink(get_page_by_title('kontakt')) ?>">
   					<?php echo $address ?><br />
   					<?php echo $postcode ?> <?php echo $city ?>
   					</a>
