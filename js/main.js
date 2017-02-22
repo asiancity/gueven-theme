@@ -460,13 +460,4 @@ jQuery(function($) { "use strict";
       videoId: videoLink
     });
   }
-  setTimeout(function(){
-    if ( $(".vc_editor ").length > 0 ){
-      $(".wpb_column").each( function(){
-        $(this).unwrap();
-        $(this).attr("data-shortcode-controls", '["edit","clone","delete"]');
-        $(this).attr("data-model-id", '08efc868-0d2e');
-      });
-    }
-  }, 500);
 });

@@ -151,14 +151,3 @@
 .contact .media.address .media-body{
   line-height: 1.4
 }
-/*--------------------------------------------------------------
-# vc_editor
---------------------------------------------------------------*/
-body.vc_editor .wpb_column {
-  min-height: 50px;
-}
-body.vc_editor .vc_element:hover .vc_controls {
-  opacity: 1;
-  filter: alpha(opacity=1);
-  visibility: visible;
-}
