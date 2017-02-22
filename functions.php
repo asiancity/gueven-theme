@@ -104,15 +104,17 @@ add_action( 'widgets_init', 'gueven_widgets_init' );
  */
 function gueven_scripts() {
 
-	wp_register_style('adios-swiper', get_template_directory_uri(). '/assets/css/idangerous.swiper.css');
-	wp_register_script( 'adios-swiper', get_template_directory_uri() .'/js/swiper.min.js',array('jquery'), '',true);
+	wp_register_style( 'rs-swiper', get_template_directory_uri(). '/assets/css/idangerous.swiper.css');
+	wp_register_script( 'rs-swiper', get_template_directory_uri() .'/js/swiper.min.js',array('jquery'), '',true);
+  wp_register_script( 'rs-gmapsensor', 'https://maps.google.com/maps/api/js?sensor_=false&#038;language=de&#038;key=AIzaSyBfGOhWB4xQ-EGR-XsCCImL3YoEfx0njic','', '',true);
+  wp_register_script( 'rs-cd-google-map', get_template_directory_uri() .'/js/map.js','', '',true);
 
 	wp_enqueue_style( 'fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 	wp_enqueue_style( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css');
-	
-	wp_enqueue_script( 'adios-wow', get_template_directory_uri() .'/js/wow.min.js',array('jquery'), '',true);
-	wp_enqueue_script( 'adios-isotope', get_template_directory_uri() .'/js/isotope.pkg.min.js',array('jquery'), '',true);
-	wp_enqueue_script( 'adios-swipebox',get_template_directory_uri() .'/js/jquery.swipe.box.min.js',array('jquery'), '',true);
+
+	wp_enqueue_script( 'rs-wow', get_template_directory_uri() .'/js/wow.min.js',array('jquery'), '',true);
+	wp_enqueue_script( 'rs-isotope', get_template_directory_uri() .'/js/isotope.pkg.min.js',array('jquery'), '',true);
+	wp_enqueue_script( 'rs-swipebox',get_template_directory_uri() .'/js/jquery.swipe.box.min.js',array('jquery'), '',true);
 	// wp_enqueue_style( 'swiper-2', get_template_directory_uri() .'/assets/css/idangerous.swiper.css');
 
 	wp_enqueue_style( 'shortcode', get_template_directory_uri() .'/assets/css/shortcode.css');
