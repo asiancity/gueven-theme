@@ -36,8 +36,13 @@ a:active {
 .site-footer .information,
 .site-footer .information a,
 .site-footer .footer-menu a,
-.site-header .search-field:focus{
+.site-header .search-field:focus,
+.smart-forms .btn-primary{
   color:#FFF;
+}
+.smart-forms .btn-primary:hover,
+.smart-forms .btn-primary:focus{
+  color:#111;
 }
 /*--------------------------------------------------------------
 # Background
@@ -48,14 +53,39 @@ a:active {
 .bgc-2{
   background-color: #FFF;
 }
+.smart-forms .btn-primary{
+  background-color: #98ab3f;
+}
+.smart-forms .btn-primary:hover,
+.smart-forms .btn-primary:focus{
+  background-color: #E8E8E8;
+}
 /*--------------------------------------------------------------
 # Border Color
 --------------------------------------------------------------*/
 .bdc-1,
 .site-header .header-wrap-1,
-.site-header .search-field{
+.site-header .search-field,
+.smart-forms .gui-input:hover,
+.smart-forms .gui-textarea:hover,
+.smart-forms .select > select:hover,
+.smart-forms .select-multiple select:hover,
+.smart-forms .select > select:focus,
+.smart-forms .select-multiple select:focus{
   border-color:#98ab3f !important
 }
 .site-footer .footer-menu{
   border-color: rgba(255,255,255, 0.3);
+}
+/*--------------------------------------------------------------
+# box-shadow
+--------------------------------------------------------------*/
+.smart-forms .gui-input:focus,
+.smart-forms .gui-textarea:focus,
+.smart-forms .select > select:focus,
+.smart-forms .select-multiple select:focus{
+  -webkit-box-shadow: 0px 0px 3px #98ab3f inset;
+  -moz-box-shadow: 0px 0px 3px #98ab3f inset;
+  -o-box-shadow: 0px 0px 3px #98ab3f inset;
+  box-shadow: 0px 0px 3px #98ab3f inset;
 }
