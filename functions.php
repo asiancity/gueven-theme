@@ -110,7 +110,7 @@ function gueven_scripts() {
   wp_register_script( 'rs-cd-google-map', get_template_directory_uri() .'/js/map.js','', '',true);
 
   $googledata = array(
-	   'siteurl' => get_template_directory_uri() . '/assets/img/marker.png'
+	   'siteurl' => get_template_directory_uri() . '/assets/'
   );
   wp_localize_script( 'rs-cd-google-map', 'get', $googledata );
 
