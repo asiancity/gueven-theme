@@ -69,6 +69,26 @@
     text-transform: uppercase;
   }
 }
+@media (min-width:1200px){
+  .header-wrap-2.scroll .site-title{
+    display: block;
+    float: left;
+  }
+  .header-wrap-2.scroll .main-navigation{
+    float: right;
+    clear: none;
+    width: auto;
+  }
+  .header-wrap-2.scroll .main-navigation ul > li:last-child a{
+    margin-right: 0;
+    padding-right: 0;
+  }
+  .header-wrap-2.scroll .site-title a{
+    font-size: 20px;
+    display: block;
+    padding: 12px 0;
+  }
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
