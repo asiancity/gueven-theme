@@ -106,11 +106,12 @@ function gueven_scripts() {
 
 	wp_register_style( 'rs-swiper', get_template_directory_uri(). '/assets/css/idangerous.swiper.css');
 	wp_register_script( 'rs-swiper', get_template_directory_uri() .'/js/swiper.min.js',array('jquery'), '',true);
-  wp_register_script( 'rs-gmapsensor', 'https://maps.google.com/maps/api/js?sensor_=false&#038;language=de&#038;key=AIzaSyBfGOhWB4xQ-EGR-XsCCImL3YoEfx0njic','', '',true);
-  wp_register_script( 'rs-cd-google-map', get_template_directory_uri() .'/js/map.js','', '',true);
+  wp_register_script( 'rs-gmapsensor', 'https://maps.google.com/maps/api/js?sensor_=false&key=AIzaSyCXL5KQBvnVxaCErkUoSSsLmsKeCNYokKE',array('jquery'), '',true);
+  wp_register_script( 'rs-cd-google-map', get_template_directory_uri() .'/js/map.js',array('rs-gmapsensor'), '',true);
 
   $googledata = array(
-	   'siteurl' => get_template_directory_uri() . '/assets/'
+    'ajaxurl' => esc_url(admin_url( 'admin-ajax.php' )),
+	  'siteurl' => get_template_directory_uri() . '/assets/'
   );
   wp_localize_script( 'rs-cd-google-map', 'get', $googledata );
 
