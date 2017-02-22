@@ -109,6 +109,11 @@ function gueven_scripts() {
   wp_register_script( 'rs-gmapsensor', 'https://maps.google.com/maps/api/js?sensor_=false&#038;language=de&#038;key=AIzaSyBfGOhWB4xQ-EGR-XsCCImL3YoEfx0njic','', '',true);
   wp_register_script( 'rs-cd-google-map', get_template_directory_uri() .'/js/map.js','', '',true);
 
+  $googledata = array(
+	   'siteurl' => site_url()
+  );
+  wp_localize_script( 'rs-google-handle', 'get', $googledata );
+
 	wp_enqueue_style( 'fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 	wp_enqueue_style( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css');
 
