@@ -117,7 +117,7 @@ function gueven_scripts() {
 
 	wp_enqueue_style( 'fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 	wp_enqueue_style( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css');
-
+  
 	wp_enqueue_script( 'rs-wow', get_template_directory_uri() .'/js/wow.min.js',array('jquery'), '',true);
 	wp_enqueue_script( 'rs-isotope', get_template_directory_uri() .'/js/isotope.pkg.min.js',array('jquery'), '',true);
 	wp_enqueue_script( 'rs-swipebox',get_template_directory_uri() .'/js/jquery.swipe.box.min.js',array('jquery'), '',true);
