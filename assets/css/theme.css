@@ -129,3 +129,25 @@
 .map-wrapper{
   min-height: 100px;
 }
+/*--------------------------------------------------------------
+# Page Contact
+--------------------------------------------------------------*/
+.contact .media{
+  margin-bottom: 30px;
+  margin-left: 10%;
+}
+.contact .media .fa {
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin-right: 20px;
+}
+.contact .media-body {
+  line-height: 40px;
+}
+.contact .media.address .media-body{
+  line-height: 1.4
+}

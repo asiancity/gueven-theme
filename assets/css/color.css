@@ -37,7 +37,8 @@ a:active {
 .site-footer .information a,
 .site-footer .footer-menu a,
 .site-header .search-field:focus,
-.smart-forms .btn-primary{
+.smart-forms .btn-primary,
+.contact .media .fa {
   color:#FFF;
 }
 .smart-forms .btn-primary:hover,
@@ -53,6 +54,7 @@ a:active {
 .bgc-2{
   background-color: #FFF;
 }
+.contact .media .fa,
 .smart-forms .btn-primary{
   background-color: #98ab3f;
 }
